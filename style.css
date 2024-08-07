@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: #e0e0e0;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #303030;
+    padding: 2vh 4vw;
+    justify-content: space-between;
+}
+
+#lotipo {
+    font-family: Playfair Display SC;
+    color: #DC5F00;
+    font-size: 2.5rem;
+}
+
+.button {
+    cursor: pointer;
+    padding: 1em;
+    font-size: 1em;
+    width: 8rem;
+    aspect-ratio: 1/0.25;
+    color: white;
+    background: #212121;
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 0.5em;
+    outline: 0.1em solid #353535;
+    border: 0;
+    box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+  
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #212121, #252525);
+    background: radial-gradient(
+      circle at bottom,
+      #4535C1 10%,
+      #212121 70%
+    );
+    outline: 0;
+}
+  
+.icon {
+    fill: white;
+    width: 1em;
+    aspect-ratio: 1;
+    top: 0;
+    left: 0;
+    margin: auto;
+    transform: translate(-35%, 10%);
+} 
+
+@media only screen and (max-width: 500px) {
+    #lotipo {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        padding: 0.1rem;
+        font-size: 0.8rem;
+        width: 7rem;
+    }
+
+    header {
+        padding: 1vh 4vw;
+    }
+}
+
+main {
+    padding: 5rem;
+    display: flex;
+}
+
+.card {
+    border: solid 1px #303030;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    gap: 1rem;
+}
+
+.capaFilme {
+    height: 16rem;
+    border-radius: 10px;
+}
+
+.informcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nomeFilme {
+    font-family: Poppins;
+    color: #DC5F00;
+    font-size: 2rem;
+}
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star {
+    font-size: 2em;
+    color: lightgray;
+    cursor: pointer;
+    text-shadow: 0 0 3px #DC5F00;
+}
+
+.star:hover,
+.star:hover ~ .star,
+.star-rating input[type="radio"]:checked ~ .star {
+    color: #DC5F00;
+    text-shadow: none;
+}

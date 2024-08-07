@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto</title>
+</head>
+<body>
+    <header>
+        <h1 id="lotipo">FILME+</h1>
+            <button class="button">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="icon">
+                  <path d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"></path>
+                </svg>
+                Adicionar
+            </button>              
+    </header>
+
+    <main>
+        <div class="card">
+            <img class="capaFilme" src="https://aventurasnahistoria.com.br/media/uploads/amazon/71ihnkf9t9l.jpg" alt="Emily Henry">
+            <span class="informcoes">
+                <h1 class="nomeFilme">Emily Henry</h1>
+                <span class="star-rating">
+                    <input type="radio" name="rating" id="rating-5"><label for="rating-5" class="star">&#9733;</label>
+                    <input type="radio" name="rating" id="rating-4"><label for="rating-4" class="star">&#9733;</label>
+                    <input type="radio" name="rating" id="rating-3"><label for="rating-3" class="star">&#9733;</label>
+                    <input type="radio" name="rating" id="rating-2"><label for="rating-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating" id="rating-1"><label for="rating-1" class="star">&#9733;</label>
+                </span>
+            </span>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Sistema de Avaliação de Filmes
+Regras do Desafio:
+Objetivo: Criar um sistema de avaliação de filmes onde os usuários podem adicionar filmes, avaliar com estrelas (de 1 a 5), adicionar comentários, editar avaliações e remover filmes. As avaliações devem ser armazenadas no localStorage e deve haver manipulação de eventos DOM, uso de funções, condicionais e tratamento de erros com try-catch.
+
+Requisitos:
+
+Utilizar localStorage para salvar os filmes e suas avaliações.
+Usar eventos DOM para adicionar, editar e remover filmes e avaliações.
+Utilizar funções para organizar o código.
+Uso de condicionais para validação de dados.
+Implementar try-catch para tratamento de erros.
+Criar uma interface simples e intuitiva com HTML e CSS. -->
