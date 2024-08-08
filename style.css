@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 body {
@@ -29,9 +30,9 @@ header {
 
 .button {
     cursor: pointer;
-    padding: 1em;
+    padding: em;
     font-size: 1em;
-    width: 8rem;
+    width: 9rem;
     aspect-ratio: 1/0.25;
     color: white;
     background: #212121;
@@ -86,10 +87,22 @@ header {
 main {
     padding: 5rem;
     display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        padding: 1rem;
+    }
 }
 
 .card {
-    border: solid 1px #303030;
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -99,6 +112,12 @@ main {
     justify-content: center;
     height: 25rem;
     gap: 1rem;
+    background-color: #303030;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .capaFilme {
@@ -113,7 +132,6 @@ main {
 }
 
 .nomeFilme {
-    font-family: Poppins;
     color: #DC5F00;
     font-size: 2rem;
 }
@@ -139,4 +157,28 @@ main {
 .star-rating input[type="radio"]:checked ~ .star {
     color: #DC5F00;
     text-shadow: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 9rem;
+        height: 16.5rem;
+        gap: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .capaFilme {
+        height: 11rem;
+        border-radius: 6px;
+    }
+
+    .nomeFilme {
+        font-size: 1rem;
+    }
+
+    .star {
+        font-size: 1em;
+    }
 }
